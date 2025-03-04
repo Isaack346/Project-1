@@ -5,7 +5,7 @@ from flask import Flask
 from flask_migrate import Migrate
 from application.database import db
 import config
-from application.bp.homepage import bp_homepage
+
 
 
 migrate = Migrate()
@@ -23,5 +23,5 @@ def init_app():
     with app.app_context():
 
         # Register Blueprints
-        app.register_blueprint(bp_homepage)
+
         return app
