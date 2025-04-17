@@ -1,6 +1,3 @@
-"""
-Database Initialization and Models
-"""
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()

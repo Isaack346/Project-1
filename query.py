@@ -1,8 +1,6 @@
-# from app import db, Product
-from application.database import User, db
-from application import init_app
-
 from faker import Faker
+from application.app import init_app
+from application.database import User, db
 
 app = init_app()
 
@@ -10,7 +8,7 @@ def create_faker_users():
     faker = Faker('en')
     Faker.seed(4321)
     user_list = []
-    number_of_users = 50
+    number_of_users = 6
 
     with app.app_context():
         for i in range(number_of_users):
