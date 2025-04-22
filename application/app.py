@@ -28,3 +28,5 @@ def init_app():
     with app.app_context():
         app.register_blueprint(homepage)
         return app
+    __all__ = ["init_app"]
+
